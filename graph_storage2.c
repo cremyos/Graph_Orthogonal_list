@@ -39,8 +39,8 @@ int CreateDG(OLGraph *G)
 		node_pair1 -= 1;
 		node_pair2 -= 1;
 		arc = (ArcBox *)malloc(sizeof(struct ArcBox));
-		arc->tailvex = 'A'+node_pair2;
-		arc->headvex = 'A'+node_pair1;
+		arc->tailvex = 'A'+node_pair1;
+		arc->headvex = 'A'+node_pair2;
 		arc->hlink = G->xlist[node_pair1].firstin;
 		arc->tlink = G->xlist[node_pair2].firstout;
 		G->xlist[node_pair2].firstin = G->xlist[node_pair2].firstout = arc;	 
