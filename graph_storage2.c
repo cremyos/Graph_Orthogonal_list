@@ -64,9 +64,9 @@ int main()
 		printf("%c -> ",'A'+i);
 		while(G->xlist[i].firstin!=NULL && G->xlist[i].firstout!=NULL)
 		{
-				printf("%c || %c -> ",G->xlist[i].firstin->tailvex,G->xlist[i].firstout->headvex);
-				G->xlist[i].firstin = G->xlist[i].firstin->hlink;
-				G->xlist[i].firstout = G->xlist[i].firstout->tlink;
+			printf("%c || %c -> ",G->xlist[i].firstin->tailvex,G->xlist[i].firstout->headvex);
+			G->xlist[i].firstin = G->xlist[i].firstin->hlink;
+			G->xlist[i].firstout = G->xlist[i].firstout->tlink;
 		}
 		printf("\n");
 	}
